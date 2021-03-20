@@ -1,0 +1,7 @@
+22:40:09 **** Incremental Build of configuration Debug for project clas1ejer2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clas1ejer2.o" "..\\src\\clas1ejer2.c" 
+gcc -o clas1ejer2.exe "src\\clas1ejer2.o" 
+
+22:40:10 Build Finished. 0 errors, 0 warnings. (took 1s.9ms)
+

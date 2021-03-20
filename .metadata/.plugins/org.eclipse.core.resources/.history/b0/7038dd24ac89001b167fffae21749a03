@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : calculoaxuliar.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int operacion;
+	int b;
+	setbuf(stdout,NULL);
+	printf("\nIngrese la operacion a realizar: resta(r),division(d),multiplicacion(m),suma(s)");
+		scanf("%c",&operacion);
+		printf("\nIngrese otro numero");
+		scanf("%d",&b);
+	return EXIT_SUCCESS;
+}
