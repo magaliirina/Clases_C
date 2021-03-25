@@ -8,9 +8,10 @@
 #ifndef UTN_H_
 #define UTN_H_
 
-int _getInt (void);
-float _getFloat(void);
-char _getChar(void);
+int _getInt (char* mensaje);
+float _getFloat(char* mensaje);
+char _getChar(char* mensaje);
+int pista (int bufferInt, int respuesta);
 
 
 #endif /* UTN_H_ */

@@ -1,20 +1,15 @@
-14:14:49 **** Incremental Build of configuration Debug for project biblioteca3 ****
+18:10:23 **** Incremental Build of configuration Debug for project biblioteca4 ****
 make all 
-Building file: ../src/biblioteca3.c
+Building file: ../src/biblioteca4.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/biblioteca3.d" -MT"src/biblioteca3.o" -o "src/biblioteca3.o" "../src/biblioteca3.c"
-Finished building: ../src/biblioteca3.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/biblioteca4.d" -MT"src/biblioteca4.o" -o "src/biblioteca4.o" "../src/biblioteca4.c"
+Finished building: ../src/biblioteca4.c
  
-Building file: ../src/utn.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
-Finished building: ../src/utn.c
- 
-Building target: biblioteca3
+Building target: biblioteca4
 Invoking: GCC C Linker
-gcc  -o "biblioteca3" ./src/biblioteca3.o ./src/utn.o   
-Finished building target: biblioteca3
+gcc  -o "biblioteca4" ./src/biblioteca4.o ./src/utn.o   
+Finished building target: biblioteca4
  
-14:14:54 **** Incremental Build of configuration Debug for project biblioteca3 ****
+18:10:29 **** Incremental Build of configuration Debug for project biblioteca4 ****
 make all 
 make: No se hace nada para 'all'.

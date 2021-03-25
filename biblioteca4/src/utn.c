@@ -11,22 +11,56 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 
- int _getInt (void){
+ int _getInt (char* mensaje){
 	 int numeroInt;
-	 printf("Ingrese un numero");
+	 printf("%s",mensaje);
 	 scanf("%d",&numeroInt);
 	 return numeroInt;
  }
-float _getFloat(void){
+float _getFloat(char* mensaje){
 	float numeroFloat;
-	printf("Ingrese un numero");
+	 printf("%s",mensaje);
 	 scanf("%f",&numeroFloat);
 	return numeroFloat;
 }
-char _getChar(void){
+char _getChar(char* mensaje){
 	char letra;
-	printf("Ingrese una letra");
+	 printf("%s",mensaje);
 	__fpurge(stdin);
 	scanf("%c",&letra);
 	return letra;
 }
+int pista (int bufferInt, int respuesta){
+	int retorno;
+	if(bufferInt>100){
+		retorno=-1;
+	}
+	else if(bufferInt<0){
+		retorno=0;
+	}
+	else if(bufferInt==respuesta){
+		retorno=1;
+	}
+	else if(bufferInt>respuesta){
+		retorno=2;
+	}
+	else if(bufferInt<respuesta){
+		retorno=3;
+	}
+	return retorno;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,7 +13,7 @@ int ingresoChar(void){
 	char caracter;
 	int retorno;
 	printf("Ingrese un caracter S/N");
-	fflush(stdin);
+	//fflush(stdin);
 	scanf("%c",&caracter);
 	if(caracter=='s'){
 		retorno=1;
