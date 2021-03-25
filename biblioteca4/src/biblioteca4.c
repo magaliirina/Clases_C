@@ -11,8 +11,11 @@ Diseñar un programa para jugar a adivinar un número entre 0 y 100.
 #include <stdio.h>
 #include <stdio_ext.h>
 #include <stdlib.h>
+#include "utn"
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	int numero;
+	numero=_getInt();
+
 	return EXIT_SUCCESS;
 }
