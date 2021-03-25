@@ -1,5 +1,5 @@
-16:47:44 **** Incremental Build of configuration Debug for project funcionEjercicio2 ****
+21:34:42 **** Incremental Build of configuration Debug for project calculadora ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionEjercicio2.o" "..\\src\\funcionEjercicio2.c" 
-gcc -o funcionEjercicio2.exe "src\\funcionEjercicio2.o" 
-Info: Nothing to build for funcionEjercicio2
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calculadora.o" "..\\src\\calculadora.c" 
+gcc -o calculadora.exe "src\\calculadora.o" 
+Info: Nothing to build for calculadora
