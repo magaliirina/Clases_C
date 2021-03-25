@@ -1,5 +1,20 @@
-21:34:42 **** Incremental Build of configuration Debug for project calculadora ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calculadora.o" "..\\src\\calculadora.c" 
-gcc -o calculadora.exe "src\\calculadora.o" 
-Info: Nothing to build for calculadora
+14:14:49 **** Incremental Build of configuration Debug for project biblioteca3 ****
+make all 
+Building file: ../src/biblioteca3.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/biblioteca3.d" -MT"src/biblioteca3.o" -o "src/biblioteca3.o" "../src/biblioteca3.c"
+Finished building: ../src/biblioteca3.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: biblioteca3
+Invoking: GCC C Linker
+gcc  -o "biblioteca3" ./src/biblioteca3.o ./src/utn.o   
+Finished building target: biblioteca3
+ 
+14:14:54 **** Incremental Build of configuration Debug for project biblioteca3 ****
+make all 
+make: No se hace nada para 'all'.
