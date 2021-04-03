@@ -16,9 +16,12 @@
 int main(void) {
 
 	int arrayEdades[CANTIDAD_EDADES];
+	int resultado;
 	for(int i=0; i<CANTIDAD_EDADES; i++){
 		_getNumero(&arrayEdades[i], "Edad?", "", 0, 150, 2);
 	}
+	utn_maximo(arrayEdades, 5, &resultado);
+	printf("%d",resultado);
 
 	return EXIT_SUCCESS;
 }

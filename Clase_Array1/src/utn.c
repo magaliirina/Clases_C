@@ -9,27 +9,27 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 
-int _getNumero(int* pNumeroInt,char* mensaje,char* mensajeError , int minimo, int maximo,int reintentos){
+int utn_getNumero(int* pNumeroInt,char* mensaje,char* mensajeError , int minimo, int maximo,int reintentos){
 	int retorno=-1;
-	//int auxiliar;
+	int bufferInt;
 
 	do{
 	printf("%s", mensaje);
-	//scanf("%d", pNumeroInt);
-	//Valor escrito en la direccion de variable de numeroInt(pisa el valor de numero)
-	//*pNumeroInt=auxiliar;
 	__fpurge(stdin);
-	if(scanf("%d", pNumeroInt)==1){
-		if(*pNumeroInt>=minimo && *pNumeroInt<=maximo){
+	if(scanf("%d", &bufferInt)!=1){
+		__fpurge(stdin);
+		printf("%s", mensajeError);
+		retorno=-2;
+	}
+	else if(pNumeroInt!=NULL&&mensaje!=NULL&&mensajeError!=NULL&&minimo<maximo&&reintentos>=0){
+		if(bufferInt>=minimo && bufferInt<=maximo){
 			retorno=0;
+			*pNumeroInt=bufferInt;
 			break;
 		}
 		else{
 			printf("%s", mensajeError);
 		}
-	}
-	else{
-		printf("%s", mensajeError);
 	}
 	reintentos--;
 	}while(reintentos>0);
@@ -37,7 +37,7 @@ int _getNumero(int* pNumeroInt,char* mensaje,char* mensajeError , int minimo, in
 	return retorno;
 }
 
-int _getChar(char* pChar, char* mensaje, char* mensajeError, char minimo, char maximo, int reintentos){
+int utn_getChar(char* pChar, char* mensaje, char* mensajeError, char minimo, char maximo, int reintentos){
 	int retorno=-1;
 	do{
 		printf("%s", mensaje);
@@ -83,7 +83,7 @@ int _getChar(char* pChar, char* mensaje, char* mensajeError, char minimo, char m
 
 	return retorno;
 }*/
-int _getNumeroFloat(float* pNumeroFloat,char* mensaje,char* mensajeError , int minimo, int maximo,int reintentos){
+int utn_getNumeroFloat(float* pNumeroFloat,char* mensaje,char* mensajeError , int minimo, int maximo,int reintentos){
 
 	int retorno=-1;
 	float bufferFloat;
@@ -140,4 +140,11 @@ int utn_minimo (int* array, int limite, int* resultado){
 	}
 	*resultado=bufferMinimo;
 	return retorno;
+}
+
+void utn_imprimirArray (int* arrayInt,int limite){
+
+	for(int i=0;i<limite;i++){
+		printf("%d ", arrayInt[i]);
+		}
 }
