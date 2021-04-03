@@ -1,4 +1,4 @@
-10:59:04 **** Incremental Build of configuration Debug for project Clase_Array1 ****
+11:36:45 **** Incremental Build of configuration Debug for project Clase_Array1 ****
 make all 
 Building file: ../src/Clase_Array1.c
 Invoking: GCC C Compiler
@@ -10,6 +10,6 @@ Invoking: GCC C Linker
 gcc  -o "Clase_Array1" ./src/Clase_Array1.o ./src/utn.o   
 Finished building target: Clase_Array1
  
-10:59:09 **** Incremental Build of configuration Debug for project Clase_Array1 ****
+12:03:36 **** Incremental Build of configuration Debug for project Clase_Array1 ****
 make all 
 make: No se hace nada para 'all'.

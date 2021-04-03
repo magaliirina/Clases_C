@@ -16,6 +16,7 @@
 int main(void) {
 	int numero;
 	int edadesArray[edadesSizes];
+	float promedio;
 
 	for(int i=0;i<edadesSizes;i++){
 		if(utn_getNumero(&numero, "ingrese una edad", "error", 0, 190, 2)==0){
@@ -26,23 +27,13 @@ int main(void) {
 		}
 	}
 	utn_imprimirArray(edadesArray, edadesSizes);
+	utn_promedio(edadesArray, edadesSizes, &promedio);
+	printf("El promedio es %.2f",promedio);
+
 
 	return EXIT_SUCCESS;
 }
 
-int utn_promedio(int* arrayAcumulador, int cantidad, int* promedioFinal){
-	int retorno;
-	retorno=-1;
-	int acumuladorPromedio;
-	if(arrayAcumulador!=NULL&&promedioFinal!=NULL&&cantidad>0){
-		for(int i=0;i<cantidad;i++){
-			acumuladorPromedio+=arrayAcumulador[i];
-		}
-		promedioFinal=acumuladorPromedio/cantidad;
-		retorno=0;
-	}
-	return retorno;
-}
 
 
 
