@@ -1,15 +1,15 @@
-11:36:45 **** Incremental Build of configuration Debug for project Clase_Array1 ****
+01:07:06 **** Incremental Build of configuration Debug for project clase_burbujero2 ****
 make all 
-Building file: ../src/Clase_Array1.c
+Building file: ../src/clase_burbujero2.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Clase_Array1.d" -MT"src/Clase_Array1.o" -o "src/Clase_Array1.o" "../src/Clase_Array1.c"
-Finished building: ../src/Clase_Array1.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clase_burbujero2.d" -MT"src/clase_burbujero2.o" -o "src/clase_burbujero2.o" "../src/clase_burbujero2.c"
+Finished building: ../src/clase_burbujero2.c
  
-Building target: Clase_Array1
+Building target: clase_burbujero2
 Invoking: GCC C Linker
-gcc  -o "Clase_Array1" ./src/Clase_Array1.o ./src/utn.o   
-Finished building target: Clase_Array1
+gcc  -o "clase_burbujero2" ./src/clase_burbujero2.o ./src/utn.o   
+Finished building target: clase_burbujero2
  
-12:03:36 **** Incremental Build of configuration Debug for project Clase_Array1 ****
+01:07:12 **** Incremental Build of configuration Debug for project clase_burbujero2 ****
 make all 
 make: No se hace nada para 'all'.
